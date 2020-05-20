@@ -1,0 +1,26 @@
+<ol class="breadcrumb float-right">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item active">Stock</li>
+  </ol>
+  <div class="card">
+    <div class="header">
+      <h2 class="title">Liste des tables</h2>
+    </div>
+    <div class="content">
+      <form #f="ngForm">
+        
+       <!-- <div class="form-group">
+          <label for="type">Type:</label>
+          <input [(ngModel)]="filter.type" id="type" name="type" class="form-control">
+        </div>
+  
+        
+        <button (click)="search()" [disabled]="!f?.valid" class="btn btn-primary">Search</button>  -->
+        <a routerLink="/stock/Demande" class="btn btn-default">Demande</a>
+        <a routerLink="/stock/" class="btn btn-default">Sortie</a>
+        <a routerLink="/stock/" class="btn btn-default">Reception</a>
+        <a routerLink="/stock/" class="btn btn-default">Dotation</a>
+      </form>
+    </div>
+  </div>
+  

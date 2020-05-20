@@ -1,0 +1,15 @@
+<h1>GMAO</h1>
+  <div [hidden]="!authenticated">
+    <p>you have access to the different microservices!</p>
+    <div>
+      <ul class="nav nav-pills">
+        <li><div [hidden]="!admin"><a href="/admin">| Admin </a></div></li>
+        <li><div><a href="/achat"> | Achat </a></div></li>
+        <li><div><a href="/maintenance"> | maintenance </a></div></li>
+        <li><div><a href="/stock"> | stock |</a></div></li>
+      </ul>
+    </div>
+  </div>
+  <div [hidden]="authenticated">
+    <p>Please login!</p>
+  </div>

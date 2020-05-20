@@ -1,0 +1,48 @@
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a class="simple-text">
+      <div class="logo-img">
+        <img src="../../assets/img/elit-logo.png" alt="">
+      </div>
+      GMAO
+    </a>
+  </div>
+  <ul class="nav">
+    <li>
+      <a routerLink="home">
+        <i class="ti-home"></i>
+        <p>Home</p>
+      </a>
+    </li>
+
+    <li >
+      <div [hidden]="tpmm">
+      <a routerLink="maintenance">
+        <i class="ti-arrow-top-right"></i>
+        <p>Maintenance</p>
+      </a>
+      </div>
+    </li>
+
+    <li >
+      <div [hidden]="gest">
+      <a routerLink="stock">
+        <i class="ti-arrow-top-right"></i>
+        <p>Stock</p>
+      </a>
+     </div>
+    </li>
+
+    <li >
+      <div >
+      <a routerLink="home">
+        <i class="ti-arrow-top-right"></i>
+        <p>Achat</p>
+      </a>
+     </div>
+    </li>
+
+
+
+  </ul>
+</div>

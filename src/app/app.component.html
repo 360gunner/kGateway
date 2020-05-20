@@ -1,0 +1,10 @@
+<div class="container">
+  <ul class="nav nav-pills">
+    <li><div><a href="/">| Home | </a></div></li>
+    <li><div [hidden]="authenticated"><a href="login"> Login | </a></div></li>
+    <li><div [hidden]="!authenticated"><a (click)="logout()"> Logout | </a></div></li>
+  </ul>
+</div>
+<div class="container font">
+  <router-outlet></router-outlet>
+</div>

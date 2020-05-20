@@ -1,0 +1,35 @@
+{
+    "title": "Demande",
+    "entity": "Demande",
+    "api": {
+      "url": "/stock/Demande"
+    },
+    "filter": [
+      "type"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "isId": true,
+        "type": "number",
+        "label": "Id",
+        "default": 0,
+        "control": "text"
+      },
+      {
+        "name": "etat",
+        "type": "string",
+        "label": "Etat"
+      },
+      {
+        "name": "objet",
+        "type": "string",
+        "label": "Objet"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "label": "Type"
+      }
+    ]
+}
